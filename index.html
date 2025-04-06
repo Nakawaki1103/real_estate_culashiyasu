@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>culashiyasu - 不動産仲介手数料0円または3万円のみ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="py-4 px-6 border-b">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800">culashiyasu</h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#service" class="text-sm font-medium hover:text-gray-600">サービス内容</a>
+                <a href="#flow" class="text-sm font-medium hover:text-gray-600">ご利用の流れ</a>
+                <a href="#faq" class="text-sm font-medium hover:text-gray-600">よくある質問</a>
+                <a href="#contact" class="text-sm font-medium hover:text-gray-600">お問い合わせ</a>
+            </nav>
+            <a href="#contact" class="hidden md:block bg-black text-white px-4 py-2 text-sm font-medium rounded">
+                お問い合わせ
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-16 px-4 bg-gray-50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-2">自分の住む部屋は</h1>
+            <h1 class="text-4xl font-bold mb-2">自分で探して</h1>
+            <h1 class="text-4xl font-bold mb-8">費用をお得に！</h1>
+
+            <div class="bg-white p-8 rounded-lg shadow-md max-w-xl mx-auto">
+                <p class="text-2xl mb-4">ポータルサイトで見つけた</p>
+                <p class="text-2xl mb-8">お部屋を送信するだけ</p>
+
+                <div class="bg-black text-white py-3 px-4 text-xl mb-10 rounded">
+                    <p>仲介手数料がすべて</p>
+                </div>
+
+                <div class="flex justify-center items-center gap-4">
+                    <div class="flex items-end">
+                        <span class="text-8xl font-bold leading-none">0</span>
+                        <span class="text-2xl mb-3">円</span>
+                    </div>
+                    <span class="text-4xl mx-2 mb-6">OR</span>
+                    <div class="flex items-end">
+                        <span class="text-8xl font-bold leading-none">3</span>
+                        <span class="text-2xl mb-3">万円</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10">
+                <a href="#contact" class="bg-black text-white px-8 py-3 text-lg font-medium inline-flex items-center rounded">
+                    今すぐ相談する
+                    <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Section -->
+    <section id="service" class="py-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">サービス内容</h2>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 shadow-sm rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">通常の不動産仲介</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-gray-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>仲介手数料が家賃の1ヶ月分</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-gray-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>物件探しから内見まで時間がかかる</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-gray-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>営業担当者の都合に合わせる必要がある</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 shadow-sm border-2 border-black rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">culashiyasuの場合</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-black mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>仲介手数料が0円または3万円のみ</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-black mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>自分で見つけた物件をそのまま契約可能</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-black mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>オンラインで手続きが完結</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flow Section -->
+    <section id="flow" class="py-16 px-4 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">お申し込みまでの流れ</h2>
+            
+            <div class="space-y-12">
+                <div class="flex flex-col md:flex-row gap-6 items-center">
+                    <div class="md:w-1/4 flex flex-col items-center">
+                        <div class="w-16 h-16 rounded-full bg-black text-white flex items-center justify-center font-bold text-2xl">
+                            1
+                        </div>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-xl font-bold mb-2">物件を見つける</h3>
+                        <p class="text-gray-700">SUUMOやHOME'S、アットホームなどのポータルサイトで気に入った物件を見つけます。</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 items-center">
+                    <div class="md:w-1/4 flex flex-col items-center">
+                        <div class="w-16 h-16 rounded-full bg-black text-white flex items-center justify-center font-bold text-2xl">
+                            2
+                        </div>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-xl font-bold mb-2">物件情報を送信</h3>
+                        <p class="text-gray-700">見つけた物件の情報（URL、物件名、住所など）をculashiyasuに送信します。</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 items-center">
+                    <div class="md:w-1/4 flex flex-col items-center">
+                        <div class="w-16 h-16 rounded-full bg-black text-white flex items-center justify-center font-bold text-2xl">
+                            3
+                        </div>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-xl font-bold mb-2">内見の調整</h3>
+                        <p class="text-gray-700">物件の内見希望日時をお知らせいただければ、管理会社と調整します。</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 items-center">
+                    <div class="md:w-1/4 flex flex-col items-center">
+                        <div class="w-16 h-16 rounded-full bg-black text-white flex items-center justify-center font-bold text-2xl">
+                            4
+                        </div>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-xl font-bold mb-2">契約手続き</h3>
+                        <p class="text-gray-700">契約に必要な書類をオンラインで提出し、仲介手数料0円または3万円のみで契約完了です。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="#contact" class="bg-black text-white px-8 py-3 text-lg font-medium inline-flex items-center rounded">
+                    今すぐ相談する
+                    <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 px-4 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">よくある質問</h2>
+            
+            <div class="space-y-6">
+                <div class="bg-white p-6 shadow-sm rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">１ Clashiyasuに利用料はかかりますか。</h3>
+                    <p class="text-gray-700">システムのご利用は完全無料になります。</p>
+                </div>
+
+                <div class="bg-white p-6 shadow-sm rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">２ なぜ仲介手数料無料で借りれるのですか。</h3>
+                    <p class="text-gray-700">
+                        大家様の方から広告費をいただく形でなりたっております。<br>
+                        大家様からの広告費がいただけな物件では３万円(税別)の金額を仲介手数料としていただきます。<br>
+                        もちろん、物件をご案内させていただく時に仲介手数料に関しましてはご説明させていただきます。
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 shadow-sm rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">３ オススメ物件等紹介してもらえますか？</h3>
+                    <p class="text-gray-700">
+                        当サービスはお客様が物件をご自身でお選び頂く事によりローコストで提供可能となる為、こちらから違う物件をすすめる事はありません。
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 shadow-sm rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">４ いつからサービスを利用できますか？</h3>
+                    <p class="text-gray-700">
+                        基本的には、ご入居希望日が1ヶ月以内の方を対象としております。<br>
+                        ※入居条件(現在、居住中等)により異なる場合がございますので、その際はお問い合わせ項目を2ヶ月以内にチェックしていただきお送りください。
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 shadow-sm rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">５ 今、他社で申し込んでいる物件は対応できますか？</h3>
+                    <p class="text-gray-700">
+                        トラブルの原因となってしまう為、お断りさせて頂いております。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">clashiyasuを使うと</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 shadow-sm rounded-lg text-center">
+                    <div class="w-16 h-16 rounded-full bg-black text-white flex items-center justify-center mx-auto mb-4">
+                        <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">初期費用が安い</h3>
+                    <p class="text-gray-700">仲介手数料が0円または3万円のみで、初期費用を大幅に削減できます。</p>
+                </div>
+
+                <div class="bg-white p-6 shadow-sm rounded-lg text-center">
+                    <div class="w-16 h-16 rounded-full bg-black text-white flex items-center justify-center mx-auto mb-4">
+                        <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">手続きが簡単</h3>
+                    <p class="text-gray-700">オンラインで手続きが完結し、時間を節約できます。</p>
+                </div>
+
+                <div class="bg-white p-6 shadow-sm rounded-lg text-center">
+                    <div class="w-16 h-16 rounded-full bg-black text-white flex items-center justify-center mx-auto mb-4">
+                        <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">自分のペースで</h3>
+                    <p class="text-gray-700">自分で物件を探せるので、納得のいく物件を見つけられます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Area Section -->
+    <section class="py-16 px-4 bg-gray-50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">対象地域：九州</h2>
+            <p class="text-gray-700">※九州のお取り扱いは一部地域に限ります。</p>
+        </div>
+    </section>
+
+    <!-- Portal Sites Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">ポータルサイト一覧</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 shadow-sm rounded-lg text-center">
+                    <h3 class="text-xl font-bold mb-4">SUUMO</h3>
+                    <p class="text-gray-700">リクルートの不動産・住宅サイト</p>
+                </div>
+
+                <div class="bg-white p-6 shadow-sm rounded-lg text-center">
+                    <h3 class="text-xl font-bold mb-4">アットホーム</h3>
+                    <p class="text-gray-700">不動産・賃貸のアットホーム</p>
+                </div>
+
+                <div class="bg-white p-6 shadow-sm rounded-lg text-center">
+                    <h3 class="text-xl font-bold mb-4">HOME'S</h3>
+                    <p class="text-gray-700">不動産・住宅情報サイト【LIFULL HOME'S/ライフルホームズ】</p>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center">
+                <p class="text-gray-700">その他のポータルサイトからもOK</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">お問い合わせ</h2>
+            <div class="bg-white p-6 shadow-sm rounded-lg">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSexhUOdyUahLkki_SFsjGL26qWRX-rqgEJhxO_CUpRBp--smA/viewform?embedded=true"
+                    width="100%"
+                    height="986"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0"
+                    class="mx-auto"
+                >
+                    読み込んでいます...
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html> 
