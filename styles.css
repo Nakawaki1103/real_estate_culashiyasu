@@ -127,4 +127,37 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* LINE Modal styles */
+#lineModal {
+    display: flex;
+    backdrop-filter: blur(4px);
+}
+
+.prefecture-btn {
+    background-color: #00B900;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.prefecture-btn:hover {
+    background-color: #009900;
+    transform: translateY(-2px);
+}
+
+/* Responsive styles for modal */
+@media (max-width: 640px) {
+    #lineModal .bg-white {
+        margin: 16px;
+    }
+    
+    .prefecture-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
 /* Add any additional custom styles here */ 

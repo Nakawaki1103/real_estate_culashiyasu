@@ -66,9 +66,9 @@
                     </div>
                     
                     <div class="flex flex-col items-center gap-4">
-                        <a href="https://lin.ee/あなたのLINE_ID" class="w-full shadow-hover">
+                        <button class="w-full shadow-hover" onclick="openLineModal()">
                             <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" class="w-full max-w-[240px] mx-auto">
-                        </a>
+                        </button>
                         <p class="text-sm text-gray-600">＼ 24時間いつでも無料相談受付中 ／</p>
                     </div>
                 </div>
@@ -354,13 +354,36 @@
         </div>
     </footer>
 
-    <!-- 追従するLINE追加ボタン（モバイル用） -->
-    <div class="fixed bottom-0 left-0 right-0 bg-white p-4 shadow-lg md:hidden">
-        <a href="https://lin.ee/あなたのLINE_ID" class="block">
-            <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" class="w-full max-w-[200px] mx-auto">
-        </a>
+    <!-- LINE誘導モーダル -->
+    <div id="lineModal" class="fixed inset-0 bg-black bg-opacity-50 items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg p-6 max-w-md w-full mx-4">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-bold">お住まいの地域を選択</h3>
+                <button id="closeModal" class="text-gray-500 hover:text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <button class="prefecture-btn bg-gray-100 hover:bg-gray-200 p-4 rounded-lg" data-url="https://lin.ee/福岡">福岡県</button>
+                <button class="prefecture-btn bg-gray-100 hover:bg-gray-200 p-4 rounded-lg" data-url="https://lin.ee/佐賀">佐賀県</button>
+                <button class="prefecture-btn bg-gray-100 hover:bg-gray-200 p-4 rounded-lg" data-url="https://lin.ee/長崎">長崎県</button>
+                <button class="prefecture-btn bg-gray-100 hover:bg-gray-200 p-4 rounded-lg" data-url="https://lin.ee/熊本">熊本県</button>
+                <button class="prefecture-btn bg-gray-100 hover:bg-gray-200 p-4 rounded-lg" data-url="https://lin.ee/大分">大分県</button>
+                <button class="prefecture-btn bg-gray-100 hover:bg-gray-200 p-4 rounded-lg" data-url="https://lin.ee/宮崎">宮崎県</button>
+                <button class="prefecture-btn bg-gray-100 hover:bg-gray-200 p-4 rounded-lg" data-url="https://lin.ee/鹿児島">鹿児島県</button>
+            </div>
+        </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- 追従するLINE追加ボタン（モバイル用） -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white p-4 shadow-lg md:hidden">
+        <button id="mobileLineBtn" class="w-full">
+            <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" class="w-full max-w-[200px] mx-auto">
+        </button>
+    </div>
+
+    <script src="public/script.js"></script>
 </body>
 </html> 
