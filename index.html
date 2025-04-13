@@ -7,6 +7,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- OGP設定 -->
+    <meta property="og:title" content="culashiyasu - 不動産仲介手数料0円または3万円のみ">
+    <meta property="og:description" content="仲介手数料0円でお部屋探しができる！LINEで24時間相談受付中">
+    <meta property="og:image" content="/public/placeholder-logo.png">
+    <meta property="og:url" content="https://culashiyasu.com">
+    <meta name="twitter:card" content="summary_large_image">
 </head>
 <body class="font-sans">
     <!-- Header -->
@@ -49,6 +55,21 @@
                     <div class="flex items-end">
                         <span class="text-8xl font-bold leading-none">3</span>
                         <span class="text-2xl mb-3">万円</span>
+                    </div>
+                </div>
+
+                <!-- LINE友だち追加セクション -->
+                <div class="mt-8">
+                    <div class="bg-[#00B900] text-white py-4 px-6 rounded-xl mb-4">
+                        <p class="font-bold mb-2">LINE登録で今すぐ相談スタート！</p>
+                        <p class="text-sm">お気軽にご相談ください</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center gap-4">
+                        <a href="https://lin.ee/あなたのLINE_ID" class="w-full shadow-hover">
+                            <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" class="w-full max-w-[240px] mx-auto">
+                        </a>
+                        <p class="text-sm text-gray-600">＼ 24時間いつでも無料相談受付中 ／</p>
                     </div>
                 </div>
             </div>
@@ -187,51 +208,6 @@
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="py-16 px-4 bg-gray-50">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12">よくある質問</h2>
-            
-            <div class="space-y-6">
-                <div class="bg-white p-6 shadow-sm rounded-lg">
-                    <h3 class="text-xl font-bold mb-4">１ Clashiyasuに利用料はかかりますか。</h3>
-                    <p class="text-gray-700">システムのご利用は完全無料になります。</p>
-                </div>
-
-                <div class="bg-white p-6 shadow-sm rounded-lg">
-                    <h3 class="text-xl font-bold mb-4">２ なぜ仲介手数料無料で借りれるのですか。</h3>
-                    <p class="text-gray-700">
-                        大家様の方から広告費をいただく形でなりたっております。<br>
-                        大家様からの広告費がいただけな物件では３万円(税別)の金額を仲介手数料としていただきます。<br>
-                        もちろん、物件をご案内させていただく時に仲介手数料に関しましてはご説明させていただきます。
-                    </p>
-                </div>
-
-                <div class="bg-white p-6 shadow-sm rounded-lg">
-                    <h3 class="text-xl font-bold mb-4">３ オススメ物件等紹介してもらえますか？</h3>
-                    <p class="text-gray-700">
-                        当サービスはお客様が物件をご自身でお選び頂く事によりローコストで提供可能となる為、こちらから違う物件をすすめる事はありません。
-                    </p>
-                </div>
-
-                <div class="bg-white p-6 shadow-sm rounded-lg">
-                    <h3 class="text-xl font-bold mb-4">４ いつからサービスを利用できますか？</h3>
-                    <p class="text-gray-700">
-                        基本的には、ご入居希望日が1ヶ月以内の方を対象としております。<br>
-                        ※入居条件(現在、居住中等)により異なる場合がございますので、その際はお問い合わせ項目を2ヶ月以内にチェックしていただきお送りください。
-                    </p>
-                </div>
-
-                <div class="bg-white p-6 shadow-sm rounded-lg">
-                    <h3 class="text-xl font-bold mb-4">５ 今、他社で申し込んでいる物件は対応できますか？</h3>
-                    <p class="text-gray-700">
-                        トラブルの原因となってしまう為、お断りさせて頂いております。
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Benefits Section -->
     <section class="py-16 px-4">
         <div class="max-w-4xl mx-auto">
@@ -307,6 +283,51 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 px-4 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">よくある質問</h2>
+            
+            <div class="space-y-6">
+                <div class="bg-white p-6 shadow-sm rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">１ Clashiyasuに利用料はかかりますか。</h3>
+                    <p class="text-gray-700">システムのご利用は完全無料になります。</p>
+                </div>
+
+                <div class="bg-white p-6 shadow-sm rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">２ なぜ仲介手数料無料で借りれるのですか。</h3>
+                    <p class="text-gray-700">
+                        大家様の方から広告費をいただく形でなりたっております。<br>
+                        大家様からの広告費がいただけな物件では３万円(税別)の金額を仲介手数料としていただきます。<br>
+                        もちろん、物件をご案内させていただく時に仲介手数料に関しましてはご説明させていただきます。
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 shadow-sm rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">３ オススメ物件等紹介してもらえますか？</h3>
+                    <p class="text-gray-700">
+                        当サービスはお客様が物件をご自身でお選び頂く事によりローコストで提供可能となる為、こちらから違う物件をすすめる事はありません。
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 shadow-sm rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">４ いつからサービスを利用できますか？</h3>
+                    <p class="text-gray-700">
+                        基本的には、ご入居希望日が1ヶ月以内の方を対象としております。<br>
+                        ※入居条件(現在、居住中等)により異なる場合がございますので、その際はお問い合わせ項目を2ヶ月以内にチェックしていただきお送りください。
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 shadow-sm rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">５ 今、他社で申し込んでいる物件は対応できますか？</h3>
+                    <p class="text-gray-700">
+                        トラブルの原因となってしまう為、お断りさせて頂いております。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="py-16 px-4 bg-gray-50">
         <div class="max-w-4xl mx-auto">
@@ -326,6 +347,19 @@
             </div>
         </div>
     </section>
+
+    <footer class="mt-16 py-8 bg-gray-100">
+        <div class="max-w-4xl mx-auto px-4 text-center text-sm text-gray-600">
+            <p>© 2024 culashiyasu All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 追従するLINE追加ボタン（モバイル用） -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white p-4 shadow-lg md:hidden">
+        <a href="https://lin.ee/あなたのLINE_ID" class="block">
+            <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" class="w-full max-w-[200px] mx-auto">
+        </a>
+    </div>
 
     <script src="script.js"></script>
 </body>
