@@ -61,4 +61,41 @@ document.addEventListener('DOMContentLoaded', function() {
             openLineModal();
         });
     });
+
+    // 『初めての方』Q&Aトグル（複数対応）
+    var toggleBtns = document.querySelectorAll('.faq--first .faq__toggle-btn');
+    toggleBtns.forEach(function(btn) {
+        var contentId = btn.getAttribute('aria-controls');
+        var content = document.getElementById(contentId);
+        if (content) {
+            btn.addEventListener('click', function() {
+                var isOpen = content.style.display === 'block';
+                content.style.display = isOpen ? 'none' : 'block';
+                btn.setAttribute('aria-expanded', !isOpen);
+            });
+        }
+    });
 }); 
+
+// ハンバーガーメニュー開閉
+const menuBtn = document.getElementById('js-menu-btn');
+const navSp = document.getElementById('js-nav-sp');
+if (menuBtn && navSp) {
+  menuBtn.addEventListener('click', () => {
+    navSp.classList.toggle('is-open');
+  });
+  // SP時のアンカークリックでメニューを閉じる
+  navSp.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 768) {
+        navSp.classList.remove('is-open');
+      }
+    });
+  });
+  // リサイズ時にSP以外ならメニューを閉じる
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      navSp.classList.remove('is-open');
+    }
+  });
+}

@@ -1,0 +1,725 @@
+@import 'styles_sp';
+
+/* =====================
+   ユーティリティ・共通
+====================== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #333;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+/* =====================
+   Header
+====================== */
+.header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.header__container {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+.header__logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222;
+}
+.header__nav {
+    display: flex;
+    gap: 1.5rem;
+    margin: 0 3px;
+}
+.header__nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #444;
+    transition: color 0.2s;
+}
+.header__nav-link:hover {
+    color: #666;
+}
+.header__contact-btn {
+    background: #000;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background 0.2s;
+    display: none;
+}
+@media (min-width: 768px) {
+    .header__contact-btn {
+        display: block;
+    }
+}
+
+/* =====================
+   Hero Section
+====================== */
+.hero {
+    background: #f8f9fa;
+    padding: 4rem 1rem;
+}
+.hero__container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.hero__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.hero__title-img {
+    img {
+        height: 625px;
+        margin: 0 auto;
+        object-fit: cover;
+    }
+}
+.hero__title--mb {
+    margin-bottom: 2rem;
+}
+.hero__card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    max-width: 600px;
+    margin: 0 auto;
+}
+.hero__lead {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.hero__lead--mb {
+    margin-bottom: 2rem;
+}
+.hero__fee-box {
+    background: #000;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    border-radius: 0.75rem;
+    margin-bottom: 2rem;
+}
+.hero__fee-flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1.5rem;
+}
+.hero__fee-item {
+    display: flex;
+    align-items: flex-end;
+}
+.hero__fee-num {
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 1;
+}
+.hero__fee-yen {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+.hero__fee-or {
+    font-size: 2rem;
+    margin: 0 1.5rem 2rem 1.5rem;
+}
+.hero__cta {
+    margin-top: 2.5rem;
+}
+.hero__cta-btn {
+    background: #000;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    transition: background 0.2s, transform 0.2s;
+}
+.hero__cta-btn:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+.hero__cta-icon {
+    margin-left: 0.5rem;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+/* =====================
+   LINE Add Section
+====================== */
+.line-add {
+    margin-top: 2rem;
+}
+.line-add__lead-box {
+    background: #00B900;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.line-add__lead {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.line-add__desc {
+    font-size: 1rem;
+}
+.line-add__btn-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.line-add__button {
+    width: 200px;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+.line-add__button--shadow:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.line-add__img {
+    width: 100%;
+    max-width: 240px;
+    display: block;
+    margin: 0 auto;
+}
+.line-add__caption {
+    font-size: 1rem;
+    color: #666;
+}
+.line-add__fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+    z-index: 50;
+    display: none;
+}
+@media (max-width: 768px) {
+    .line-add__fixed {
+        display: block;
+    }
+}
+
+/* =====================
+   Service Section
+====================== */
+.service__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.service__title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.service__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+@media (max-width: 768px) {
+    .service__grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+.service__card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: transform 0.3s;
+}
+.service__card--highlight {
+    border: 2px solid #000;
+}
+.service__card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.service__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.service__list-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+}
+.service__icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+    margin-top: 0.15rem;
+}
+.service__icon--gray {
+    color: #aaa;
+}
+.service__icon--black {
+    color: #000;
+}
+
+/* =====================
+   Flow Section
+====================== */
+.flow__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.flow__title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.flow__steps {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.flow__step {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .flow__step {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+.flow__step-num {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.flow__step-content {
+    flex: 1;
+}
+.flow__step-img {
+    width: 100px;
+    margin-bottom: 0.5rem;
+}
+.flow__step-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.flow__step-desc {
+    color: #555;
+}
+.flow__cta {
+    margin-top: 3rem;
+    text-align: center;
+}
+.flow__cta-btn {
+    background: #000;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    transition: background 0.2s, transform 0.2s;
+}
+.flow__cta-btn:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+.flow__cta-icon {
+    margin-left: 0.5rem;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+/* =====================
+   Benefit Section
+====================== */
+.benefit__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.benefit__title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.benefit__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+@media (max-width: 768px) {
+    .benefit__grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+.benefit__card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.benefit__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.benefit__icon-box {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem auto;
+}
+.benefit__icon {
+    width: 2rem;
+    height: 2rem;
+}
+.benefit__card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.benefit__card-desc {
+    color: #555;
+}
+
+/* =====================
+   Benefit Section
+====================== */
+.better__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.better__title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.better__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+@media (max-width: 768px) {
+    .better__grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+.better__card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.better__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.better__icon-box {
+
+}
+.better__icon {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+.better__card-desc {
+    color: #555;
+}
+
+/* =====================
+   Area Section
+====================== */
+.area__container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    img {
+        margin: 0 auto;
+        padding: 40px 0;
+    }
+}
+.area__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.area__desc {
+    color: #555;
+}
+
+/* =====================
+   Portal Section
+====================== */
+.portal__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.portal__title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.portal__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+@media (max-width: 768px) {
+    .portal__grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+.portal__card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    text-align: center;
+}
+.portal__card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.portal__card-desc {
+    color: #555;
+}
+.portal__caption {
+    margin-top: 2rem;
+    text-align: center;
+}
+.portal__caption-text {
+    color: #555;
+}
+
+/* =====================
+   FAQ Section
+====================== */
+.faq__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.faq__title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.faq__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.faq__item {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.faq__item-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.faq__item-desc {
+    color: #555;
+}
+
+/* =====================
+   Contact Section
+====================== */
+.contact__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.contact__title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact__form-wrap {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.contact__iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+/* =====================
+   Footer
+====================== */
+.footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    background: #f5f5f5;
+}
+.footer__container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #888;
+}
+.footer__copyright {
+    margin: 0;
+}
+
+/* =====================
+   LINE Modal
+====================== */
+.line-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    display: none;
+}
+.line-modal__container {
+    background: #fff;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 1rem;
+}
+.line-modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.line-modal__title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.line-modal__close-btn {
+    color: #888;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.line-modal__close-btn:hover {
+    color: #222;
+}
+.line-modal__close-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.line-modal__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.line-modal__pref-btn {
+    background: #00B900;
+    color: #fff;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: background 0.2s, transform 0.2s;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+.line-modal__pref-btn:hover {
+    background: #009900;
+    transform: translateY(-2px);
+}
+@media (max-width: 640px) {
+    .line-modal__container {
+        margin: 1rem;
+    }
+    .line-modal__pref-btn {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* =====================
+   アニメーション
+====================== */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.benefit__card,
+.hero__card,
+.service__card,
+.faq__item,
+.contact__form-wrap {
+    animation: bounceIn 0.5s ease;
+} 
