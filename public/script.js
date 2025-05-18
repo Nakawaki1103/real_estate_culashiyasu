@@ -75,6 +75,21 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     });
+
+    // LINEモーダル 県選択→LINEで送る
+    const prefBtns = document.querySelectorAll('.line-modal__pref-btn');
+    const lineShareArea = document.getElementById('lineShareArea');
+    const selectedPrefText = document.getElementById('selectedPrefText');
+    const lineShareBtn = document.getElementById('lineShareBtn');
+
+    prefBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const pref = btn.getAttribute('data-pref');
+            selectedPrefText.textContent = `選択した県：${pref}`;
+            lineShareBtn.href = `https://line.me/R/msg/text/?${encodeURIComponent(pref + 'から登録しました')}`;
+            lineShareArea.style.display = 'block';
+        });
+    });
 }); 
 
 // ハンバーガーメニュー開閉
