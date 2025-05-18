@@ -6,6 +6,15 @@
   .header__contact-btn {
     display: block;
   }
+  .hero__title-img {
+    img {
+        margin: 0 auto;
+        object-fit: contain;
+    }
+  }
+  .hero__fee-yen {
+    font-size: 1rem;
+  }
   .line-add__fixed {
     display: block;
   }

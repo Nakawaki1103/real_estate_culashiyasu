@@ -87,7 +87,7 @@ section {
     img {
         height: 625px;
         margin: 0 auto;
-        object-fit: cover;
+        object-fit: contain;
     }
 }
 .hero__title--mb {
@@ -132,7 +132,7 @@ section {
     line-height: 1;
 }
 .hero__fee-yen {
-    font-size: 2rem;
+    font-size: 1rem;
     margin-bottom: 0.75rem;
 }
 .hero__fee-or {

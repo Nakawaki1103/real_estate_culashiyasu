@@ -6,6 +6,13 @@
   .header__contact-btn {
     display: block;
   }
+  .hero__title-img img {
+    margin: 0 auto;
+    object-fit: contain;
+  }
+  .hero__fee-yen {
+    font-size: 1rem;
+  }
   .line-add__fixed {
     display: block;
   }
@@ -182,7 +189,7 @@ section {
 .hero__title-img img {
   height: 625px;
   margin: 0 auto;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .hero__title--mb {
@@ -235,7 +242,7 @@ section {
 }
 
 .hero__fee-yen {
-  font-size: 2rem;
+  font-size: 1rem;
   margin-bottom: 0.75rem;
 }
 
