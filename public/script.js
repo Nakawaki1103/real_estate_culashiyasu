@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
         btn.addEventListener('click', function() {
             const pref = btn.getAttribute('data-pref');
             selectedPrefText.textContent = `選択した県：${pref}`;
-            lineShareBtn.href = `https://line.me/R/msg/text/?${encodeURIComponent(pref + 'から登録しました')}`;
+            lineShareBtn.href = `https://line.me/R/msg/text/?${encodeURIComponent(pref + 'で登録しました')}`;
             lineShareArea.style.display = 'block';
         });
     });
